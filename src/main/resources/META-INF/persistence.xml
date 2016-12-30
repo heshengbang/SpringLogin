@@ -13,12 +13,11 @@
             <property name="hibernate.connection.characterEncoding" value="utf-8"/>
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.user_sql_comments" value="false"/>
-            <property name="hbm2ddl.auto" value="update"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
             <!-- 超时后自动重连 -->
             <property name="hibernate.connection.autoReconnect" value="true"/>
             <property name="connection.autoReconnectForPools" value="true"/>
             <property name="connection.is-connection-validation-required" value="true"/>
-            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
         </properties>
     </persistence-unit>
 </persistence>

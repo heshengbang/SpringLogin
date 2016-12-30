@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -19,6 +20,13 @@ import java.util.List;
 public class FirstController {
     @Autowired
     private transient IUserDao userDao;
+
+    @RequestMapping(value = "/admin/users/show/{id}", method = RequestMethod.GET)
+    public String showUser(@PathVariable("id")Integer userId, ModelMap modelMap) {
+        UserEntity userEntity = userDao.findOne(userId);
+        modelMap.addAttribute("user", userEntity);
+        return "admin/userDetail";
+    }
 
     @RequestMapping(value = "/admin/users", method = RequestMethod.GET)
     public String getUsers(ModelMap modelMap) {

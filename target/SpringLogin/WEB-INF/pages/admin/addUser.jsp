@@ -35,7 +35,7 @@
         </div>
         <div class="form-group">
             <label for="password">Password:&nbsp;</label>
-            <input type="text" class="form-control" id="password" name="password" placeholder="Enter Password:" />
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password:" />
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-sm btn-success">提交</button>
