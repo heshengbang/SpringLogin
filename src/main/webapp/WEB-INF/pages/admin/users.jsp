@@ -15,8 +15,58 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Spring Login用户管理</title>
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".btn-danger").click(function () {
+                var $this = $(this);
+                var id = $this.attr("userId");
+                console.log("delete"+id);
+                $this.attr("data-toggle","modal");
+                $this.attr("data-target","#myModal");
+                $("#deleteUser").attr("userId",id);
+                var name = $this.parents("tr").find("td:eq(1)").html();
+                $(".modal-body").html($(".modal-body").html()+name);
+            });
+            $("#deleteUser").click(function () {
+                var id = $("#deleteUser").attr("userId");
+                console.log("deleteUser");
+                $.post("${pageContext.request.contextPath}/admin/users/delete",{id:id},function(){
+                    $("#deleteUser").removeAttr("userId");
+                    console.log("执行回调");
+                    location.reload();
+                });
+            })
+        })
+    </script>
 </head>
 <body>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    删除用户
+                </h4>
+            </div>
+            <div class="modal-body">
+                是否删除用户：
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="deleteUser">删除</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+
+
 <div class="container">
     <h1>Spring Login 博客系统-用户管理</h1>
     <hr/>
@@ -44,7 +94,7 @@
                     <td>
                         <a href="${pageContext.request.contextPath}/admin/users/show/${user.id}" type="button" class="btn btn-sm btn-success">详情</a>
                         <a href="${pageContext.request.contextPath}/admin/users/update/${user.id}" type="button" class="btn btn-sm btn-warning">修改</a>
-                        <a href="${pageContext.request.contextPath}/admin/users/delete/${user.id}" type="button" class="btn btn-sm btn-danger">删除</a>
+                        <a type="button" id="delete" class="btn btn-sm btn-danger" userId="${user.id}">删除</a>
                     </td>
                 </tr>
             </c:forEach>
