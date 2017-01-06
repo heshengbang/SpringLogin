@@ -29,7 +29,6 @@ class BlogController {
 
     @RequestMapping(value = "/blog/blogs/update/{id}", method = RequestMethod.GET)
     public String forwardUpdateBlog(@PathVariable("id")Integer blogId, ModelMap modelMap) {
-        System.out.println("What hell");
         BlogEntity blogEntity = blogDao.findOne(blogId);
         List<UserEntity> userList = userDao.findAll();
         modelMap.addAttribute("userList",userList);
@@ -46,7 +45,6 @@ class BlogController {
 
     @RequestMapping(value = "/blog/blogs/delete", method = RequestMethod.POST)
     public String deleteUser(@ModelAttribute("id")Integer blogId) {
-        System.out.println(blogId);
         blogDao.delete(blogId);
         blogDao.flush();
         return "redirect:/blog/blogs";
@@ -54,16 +52,13 @@ class BlogController {
 
     @RequestMapping(value = "/blog/blogs/show/{id}", method = RequestMethod.GET)
     public String showBlog(@PathVariable("id")Integer blogId, ModelMap modelMap) {
-        System.out.println("没进入吗");
         BlogEntity blogEntity = blogDao.findOne(blogId);
-        System.out.println("标题 - "+blogEntity.getTitle());
         modelMap.addAttribute("blog", blogEntity);
         return "blog/blogDetail";
     }
 
     @RequestMapping(value = "/blog/blogs/addBlogToDb", method = RequestMethod.POST)
     public String addBlog(@ModelAttribute("blog")BlogEntity blogEntity) {
-        System.out.println("blog to real");
         blogDao.saveAndFlush(blogEntity);
         return "redirect:/blog/blogs";
     }
