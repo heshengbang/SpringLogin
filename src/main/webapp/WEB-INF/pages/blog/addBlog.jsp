@@ -13,12 +13,12 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>添加博客</title>
+    <title>桔梗博客</title>
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
 <div class="container">
-    <h1>SpringLogin 添加博客</h1>
+    <h1>添加博客</h1>
     <hr/>
     <form:form action="${pageContext.request.contextPath}/blog/blogs/addBlogToDb" method="post" commandName="blog" role="form">
         <div class="form-group">

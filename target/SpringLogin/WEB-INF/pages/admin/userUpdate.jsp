@@ -12,12 +12,12 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Spring Login用户信息修改</title>
+    <title>桔梗博客</title>
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
 <div class="container">
-    <h1>Spring Login 修改用户</h1>
+    <h1>修改用户</h1>
     <hr/>
     <form:form action="${pageContext.request.contextPath}/admin/users/update" method="post" commandName="user" role="form">
         <div class="form-group">
