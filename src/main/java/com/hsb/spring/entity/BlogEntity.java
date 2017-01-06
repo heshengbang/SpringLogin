@@ -2,6 +2,8 @@ package com.hsb.spring.entity;/*
  * Copyright ©2011-2016 hsb
  */
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -11,6 +13,10 @@ public class BlogEntity {
     private int id;
     private String title;
     private String content;
+    /*
+    * 少了这个注解会报400 bad request
+    */
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date pubDate;
     private UserEntity blogByUserId;
 
@@ -35,7 +41,7 @@ public class BlogEntity {
     }
 
     @Basic
-    @Column(name = "content")
+    @Column(name = "content", nullable = true, length = 255)
     public String getContent() {
         return content;
     }

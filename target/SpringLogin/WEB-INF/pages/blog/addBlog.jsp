@@ -20,7 +20,7 @@
 <div class="container">
     <h1>SpringLogin 添加博客</h1>
     <hr/>
-    <form:form action="${pageContext.request.contextPath}/blog/blogs/addBlogToDb" method="get" commandName="blog" role="form">
+    <form:form action="${pageContext.request.contextPath}/blog/blogs/addBlogToDb" method="post" commandName="blog" role="form">
         <div class="form-group">
             <label for="title">Title:&nbsp;</label>
             <input type="text" class="form-control" id="title" name="title" placeholder="Enter Title:"/>
