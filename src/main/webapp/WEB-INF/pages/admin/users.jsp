@@ -22,7 +22,6 @@
             $(".btn-danger").click(function () {
                 var $this = $(this);
                 var id = $this.attr("userId");
-                console.log("delete"+id);
                 $this.attr("data-toggle","modal");
                 $this.attr("data-target","#myModal");
                 $("#deleteUser").attr("userId",id);
@@ -31,10 +30,8 @@
             });
             $("#deleteUser").click(function () {
                 var id = $("#deleteUser").attr("userId");
-                console.log("deleteUser");
                 $.post("${pageContext.request.contextPath}/admin/users/delete",{id:id},function(){
                     $("#deleteUser").removeAttr("userId");
-                    console.log("执行回调");
                     location.reload();
                 });
             })
