@@ -18,10 +18,14 @@ import java.util.List;
 
 @Controller
 class BlogController {
+    private final IBlogDao blogDao;
+    private final IUserDao userDao;
+
     @Autowired
-    private IBlogDao blogDao;
-    @Autowired
-    private IUserDao userDao;
+    public BlogController(IBlogDao blogDao, IUserDao userDao) {
+        this.blogDao = blogDao;
+        this.userDao = userDao;
+    }
 
     @RequestMapping(value = "/blog/blogs/update/{id}", method = RequestMethod.GET)
     public String forwardUpdateBlog(@PathVariable("id")Integer blogId, ModelMap modelMap) {

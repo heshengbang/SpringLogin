@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6cad5de-b31c-4a6f-b99d-148d8fc5911a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/blog/blogUpdate.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/hsb/spring/blog/web/BlogController.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringLogin/WEB-INF/classes/com/hsb/spring/blog/web/BlogController.class" afterPath="$PROJECT_DIR$/target/SpringLogin/WEB-INF/classes/com/hsb/spring/blog/web/BlogController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hsb/spring/blog/dao/IBlogDao.class" afterPath="$PROJECT_DIR$/target/classes/com/hsb/spring/blog/dao/IBlogDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hsb/spring/blog/web/BlogController.class" afterPath="$PROJECT_DIR$/target/classes/com/hsb/spring/blog/web/BlogController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hsb/spring/blog/dao/IBlogDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/hsb/spring/blog/dao/IBlogDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource.txt" afterPath="$PROJECT_DIR$/resource.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hsb/spring/blog/web/BlogController.java" afterPath="$PROJECT_DIR$/src/main/java/com/hsb/spring/blog/web/BlogController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/addUser.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/addUser.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/userDetail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/userDetail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/userUpdate.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/userUpdate.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/users.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/users.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/blog/addBlog.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/blog/addBlog.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/blog/blogDetail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/blog/blogDetail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/blog/blogs.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/blog/blogs.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringLogin/WEB-INF/pages/blog/blogs.jsp" afterPath="$PROJECT_DIR$/target/SpringLogin/WEB-INF/pages/blog/blogs.jsp" />
     </list>
     <ignored path="SpringLogin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,7 +40,20 @@
     <favorites_list name="SpringLogin" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="BlogController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsb/spring/blog/web/BlogController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1342">
+              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -66,6 +68,7 @@
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="FORCE_PUSH_ALLOWED" value="true" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -94,7 +97,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hsb/spring/entity/UserEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hsb/spring/entity/BlogEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hsb/spring/blog/dao/IBlogDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hsb/spring/blog/web/BlogController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/addUser.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/userDetail.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/userUpdate.jsp" />
@@ -104,6 +106,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/users.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/blog/blogs.jsp" />
+        <option value="$PROJECT_DIR$/resource.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hsb/spring/blog/web/BlogController.java" />
       </list>
     </option>
   </component>
@@ -1064,7 +1068,7 @@
       <workItem from="1483665297788" duration="107000" />
       <workItem from="1483665408057" duration="3514000" />
       <workItem from="1483668930789" duration="862000" />
-      <workItem from="1483669801991" duration="11323000" />
+      <workItem from="1483669801991" duration="12681000" />
     </task>
     <task id="LOCAL-00001" summary="blog detail jsp">
       <created>1483672065906</created>
@@ -1077,7 +1081,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79449000" />
+    <option name="totallyTimeSpent" value="80807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1100,11 +1104,11 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.87234044" sideWeight="0.48789713" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2913257" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.23856209" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2344932" sideWeight="0.7614379" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2344932" sideWeight="0.7614379" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1114,6 +1118,24 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1146,7 +1168,7 @@
         <state relative-caret-position="264">
           <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1195,7 +1217,7 @@
         <state relative-caret-position="308">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1205,8 +1227,8 @@
         <state relative-caret-position="418">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1348,13 +1370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1368,7 +1383,7 @@
         <state relative-caret-position="220">
           <caret line="19" column="24" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1402,8 +1417,8 @@
         <state relative-caret-position="594">
           <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
           <folding>
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1421,16 +1436,6 @@
         <state relative-caret-position="242">
           <caret line="20" column="163" selection-start-line="20" selection-start-column="163" selection-end-line="20" selection-end-column="163" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsb/spring/blog/web/BlogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1503,6 +1508,24 @@
         <state relative-caret-position="259">
           <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsb/spring/blog/web/BlogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1342">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
