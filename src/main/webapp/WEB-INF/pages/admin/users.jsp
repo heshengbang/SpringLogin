@@ -26,15 +26,23 @@
                 $this.attr("data-target","#myModal");
                 $("#deleteUser").attr("userId",id);
                 var name = $this.parents("tr").find("td:eq(1)").html();
-                $(".modal-body").html($(".modal-body").html()+name);
+                $(".modal-body").html("是否删除用户："+name);
             });
             $("#deleteUser").click(function () {
                 var id = $("#deleteUser").attr("userId");
-                $.post("${pageContext.request.contextPath}/admin/users/delete",{id:id},function(){
+                $.post("${pageContext.request.contextPath}/admin/users/delete",{id:id},function(data){
                     $("#deleteUser").removeAttr("userId");
-                    location.reload();
+                    if(data == "SUCCESS") {
+                        location.reload();
+                    }else {
+                        $(".modal-body").html("失败！该用户还有 "+data+" 篇博客文章在本平台中");
+                        setTimeout(reloadPage,3000);
+                    }
                 });
-            })
+            });
+            var reloadPage = function(){
+                location.reload();
+            }
         })
     </script>
 </head>
@@ -52,7 +60,6 @@
                 </h4>
             </div>
             <div class="modal-body">
-                是否删除用户：
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
