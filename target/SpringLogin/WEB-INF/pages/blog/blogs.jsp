@@ -30,17 +30,9 @@
             });
             $("#deleteblog").click(function () {
                 var id = $("#deleteblog").attr("blogId");
-                $.post("${pageContext.request.contextPath}/blog/blogs/delete", {id: id}, function (result) {
-                    console.log(result);
+                $.post("${pageContext.request.contextPath}/blog/blogs/delete", {id: id}, function () {
                     $("#deleteUser").removeAttr("blogId");
-                    if(result == "FAIL"){
-                        console.log("删除失败");
-                    }else if(result == "SUCCESS"){
-                        console.log("删除成功");
-                        location.href = "${pageContext.request.contextPath}/blog/blogs";
-                    }
-                },function () {
-                    console.log("失败回调");
+                    location.href = "${pageContext.request.contextPath}/blog/blogs";
                 });
             })
         })
