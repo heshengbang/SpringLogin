@@ -1,4 +1,5 @@
-package com.hsb.spring.blog.web;/*
+package com.hsb.spring.blog.web;
+/*
  * Copyright ©2011-2016 hsb
  */
 

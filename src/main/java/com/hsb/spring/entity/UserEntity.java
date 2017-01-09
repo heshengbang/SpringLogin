@@ -1,4 +1,5 @@
-package com.hsb.spring.entity;/*
+package com.hsb.spring.entity;
+/*
  * Copyright ©2011-2016 hsb
  */
 

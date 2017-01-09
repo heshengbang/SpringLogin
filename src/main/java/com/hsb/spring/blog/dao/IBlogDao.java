@@ -1,4 +1,5 @@
-package com.hsb.spring.blog.dao;/*
+package com.hsb.spring.blog.dao;
+/*
  * Copyright ©2011-2016 hsb
  */
 
